@@ -106,9 +106,12 @@ p {
     padding: 12px 18px;
     color: #ffffff;
     background: var(--primary);
+    border: 0;
     border-radius: 6px;
     text-decoration: none;
+    font: inherit;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -118,6 +121,49 @@ p {
 .button.secondary {
     color: var(--primary-dark);
     background: #dff7f3;
+}
+
+.contact-form {
+    display: grid;
+    gap: 18px;
+    margin-top: 28px;
+}
+
+.form-row {
+    display: grid;
+    gap: 8px;
+}
+
+.form-row label {
+    color: var(--text);
+    font-weight: 700;
+}
+
+.form-row input,
+.form-row textarea {
+    width: 100%;
+    padding: 12px 14px;
+    color: var(--text);
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font: inherit;
+}
+
+.form-row textarea {
+    resize: vertical;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+    border-color: var(--primary);
+    outline: 3px solid #dff7f3;
+}
+
+.form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 @media (max-width: 640px) {
