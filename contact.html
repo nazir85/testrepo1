@@ -20,10 +20,36 @@
 
     <main class="page">
         <section class="panel">
-            <p class="eyebrow">Contact</p>
-            <h1>Testing contact page.</h1>
-            <p>No form or backend is wired here. This page exists as a third navigation target for simple site testing.</p>
-            <a class="button secondary" href="index.html">Back Home</a>
+            <p class="eyebrow">Contact Us</p>
+            <h1>Send us a message.</h1>
+            <p>This static form is for layout and navigation testing. It does not submit to a backend yet.</p>
+
+            <form class="contact-form" action="#" method="post">
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" type="text" placeholder="How can we help?" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button class="button" type="submit">Send Message</button>
+                    <a class="button secondary" href="index.html">Back Home</a>
+                </div>
+            </form>
         </section>
     </main>
 </body>
