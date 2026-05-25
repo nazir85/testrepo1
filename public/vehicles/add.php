@@ -6,6 +6,10 @@ require_once __DIR__ . '/../../config/database.php';
 require_once __DIR__ . '/../../includes/helpers.php';
 
 $pageTitle = 'Add Vehicle';
+$breadcrumbs = [
+    ['label' => 'Vehicles', 'url' => '/vehicles/index.php'],
+    ['label' => 'Add Vehicle'],
+];
 $errors = [];
 $values = vehicleFormValues();
 

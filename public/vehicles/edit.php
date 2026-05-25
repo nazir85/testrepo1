@@ -19,6 +19,10 @@ if (!$vehicle) {
 }
 
 $pageTitle = 'Edit Vehicle';
+$breadcrumbs = [
+    ['label' => 'Vehicles', 'url' => '/vehicles/index.php'],
+    ['label' => 'Edit Vehicle'],
+];
 $errors = [];
 $values = vehicleFormValues($vehicle);
 
