@@ -26,6 +26,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 $pageTitle = 'Delete Vehicle';
+$breadcrumbs = [
+    ['label' => 'Vehicles', 'url' => '/vehicles/index.php'],
+    ['label' => 'Delete Vehicle'],
+];
 require_once __DIR__ . '/../../includes/header.php';
 ?>
 <div class="d-flex justify-content-between align-items-center mb-3">
