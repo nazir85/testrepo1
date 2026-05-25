@@ -100,6 +100,47 @@ p {
     line-height: 1.7;
 }
 
+.countdown {
+    margin-top: 24px;
+}
+
+.countdown-label {
+    margin: 0 0 10px;
+    color: var(--text);
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.countdown-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(90px, 1fr));
+    gap: 10px;
+}
+
+.countdown-item {
+    display: grid;
+    gap: 4px;
+    padding: 12px;
+    background: #f0fbf9;
+    border: 1px solid #cceeea;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.countdown-item span {
+    color: var(--primary-dark);
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.countdown-item small {
+    color: var(--muted);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
 .button {
     display: inline-flex;
     margin-top: 16px;
@@ -143,5 +184,9 @@ p {
     .hero,
     .panel {
         padding: 28px;
+    }
+
+    .countdown-grid {
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
     }
 }
