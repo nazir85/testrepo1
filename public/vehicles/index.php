@@ -6,6 +6,9 @@ require_once __DIR__ . '/../../config/database.php';
 require_once __DIR__ . '/../../includes/helpers.php';
 
 $pageTitle = 'Vehicles';
+$breadcrumbs = [
+    ['label' => 'Vehicles'],
+];
 $statement = $pdo->prepare('SELECT id, make, model, year, vin, price, status, created_at FROM vehicles ORDER BY created_at DESC, id DESC');
 $statement->execute();
 $vehicles = $statement->fetchAll();
