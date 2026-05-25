@@ -49,4 +49,8 @@ Open `http://localhost:8000/vehicles/index.php`.
 - `public/vehicles/edit.php` edits vehicles.
 - `public/vehicles/delete.php` deletes vehicles after confirmation.
 
+### Navigation
+
+The shared header includes a responsive Bootstrap navbar, active page highlighting, a quick `New Vehicle` action, and breadcrumbs on vehicle pages.
+
 All database reads and writes use PDO prepared statements, and the UI uses Bootstrap 5 from a CDN.
